@@ -24,7 +24,7 @@ class CountSort
 
             // sorting
             int j=0;
-            for(int i=0;i<count.length;i++)
+            for(int i=0;i<a.length;i++)
             {
                 while(count[i]>0)
                 {

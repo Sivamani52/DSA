@@ -3,14 +3,14 @@ public class ReverseSelectionSort {
     {
         int a[]={3,6,2,1,8,7,4,5,3,1};
         
-        for(int i=0;i<a.length;i++)
+        for(int i=0;i<a.length-1;i++)
         {
             int MaxPos=i;
-            for(int j=i;j<a.length-1;j++)
+            for(int j=i+1;j<a.length;j++)
             {
-                if(a[j]<a[j+1])
+                if(a[j]>a[MaxPos])
                 {
-                   MaxPos=j+1;
+                   MaxPos=j;
                 }
             }
                 int temp=a[i];

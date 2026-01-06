@@ -17,7 +17,8 @@ public class RvseCountSort {
             count[a[i]]++;
         }
 
-        int j=count.length-1;
+        int j=count.length;
+
         for(int i=0;i<count.length;i++)
         {
             while(count[i]>0)
@@ -28,7 +29,7 @@ public class RvseCountSort {
             }
         }
 
-        for(int i=0;i<count.length;i++)
+        for(int i=0;i<a.length;i++)
         {
             System.out.print(a[i]+" ");
         }

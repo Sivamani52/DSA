@@ -2,34 +2,30 @@ public class MostFreqcyNum {
      
     public static void main(String args[]) {
         int  a[] = {2,5,2,1,5,1,2,2,5,5,5};
-        int val=0,ind=0;
-        int max=0,index=0;
+      int count=0;
+        int max=0,mostereted=0;
 
         for(int i=0;i<a.length;i++)
         {
+            count=0;
             for(int j=0;j<a.length;j++)
             {
-                        if(i==j)
+                    
+                    if(a[i]==a[j])
                     {
-                        continue;
-                    }
-                    if(a[j]==a[i])
-                    {
-                        val++;
-                    ind=a[i];
+                       count++;
                     }
            }
 
-           if(max<val)
+           if(max<count)
                 {
-                    max=val;
-                    index=a[i];
+                    max=count;
+                    mostereted=a[i];
                 }
-            val=0;
 
             }
 
-        System.out.print(index);
+        System.out.print(mostereted);
         
     }
 }
